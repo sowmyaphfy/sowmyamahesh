@@ -1,0 +1,56 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+
+}
+    nav  ul{
+        list-style: none;
+        display: flex;
+        position: fixed;
+        margin:15px 340px;
+        height: 32px;
+    }
+    li a{
+        text-decoration: none;
+        padding: 10px 20px;
+        color: red;
+        border-right: 1px solid;
+
+    }
+    nav ul li a{
+        display: inline-block;
+        color: royalblue;
+        padding:10px 20px ;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: sienna;
+       
+    }
+    nav ul ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        display: none;
+    }
+    nav ul ul li a{
+        width: 200px;
+        display: block;
+        border: 1px solid #ccc;
+    }
+    ul li a:hover{
+        background: rgb(2,0,36);
+         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,2,55,1) 8%);
+           
+    }
+    nav ul li:hover>ul
+    {
+        display: block;
+        width: 100%;
+        transition: 0.6 ease-in;
+        width:100% ;
+        border: 2px blueviolet;
+        
+    }
+
+    

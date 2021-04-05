@@ -1,0 +1,114 @@
+/* Utility Classes */
+.adSize { width: 728px; height: 90px;}
+.vidHid{opacity: 0; visibility: hidden;}
+.posAb{position:absolute;}
+.topLef{left: 0px; top: 0px;}
+.bgDef{background-size: contain !important; background-repeat: no-repeat !important; }
+.overFlowHid{overflow: hidden;}
+.lglStar{ position: relative; vertical-align: top; font-size: 15px; top: 3.3px; }
+.lgl { color:rgba(255, 255, 255, 0.5); }
+/* #temp{ background: url('../assets/tempEl.png'); } */
+
+/* Fonts */
+.metBlack{
+	font-family: 'MetricHPE-black', sans-serif;
+}
+.metBold{
+	font-family: 'MetricHPE-bold', sans-serif;
+}
+.metSemiBold{
+	font-family: 'MetricHPE-semi-bold', sans-serif;
+}
+.metLight{
+	font-family: 'MetricHPE-light', sans-serif;
+}
+
+#F1-logo1_1{
+	background: url('../assets/F1-logo1_1.png');
+}
+
+/* F1 */
+#F1-text1_1{
+    top: 12.6px;
+    left: 291px;
+    font-size: 27px;
+    letter-spacing: 0.4px;
+}
+
+#F1-text1_2{
+    top: 36.6px;
+    left: 223px;
+    font-size: 27px;
+    letter-spacing: 0.4px;
+}
+
+/* F2 */
+#F2-text1_1{
+    top: 12.2px;
+    left: 342px;
+    font-size: 27px;
+    letter-spacing: 0.4px;
+}
+
+#F2-text1_2{
+    top: 36.2px;
+    left: 278px;
+    font-size: 27px;
+    letter-spacing: 0.3px;
+}
+
+#F2-legal1_1{
+    text-transform: none;
+    top: 65.7px;
+    left: 580px;
+    letter-spacing: 0.4px;
+    font-size: 12px;
+}
+
+/* F3 */
+#F3-text1_1{
+    top: 12.2px;
+    left: 327px;
+    font-size: 27px;
+    letter-spacing: 0.1px;
+}
+
+#F3-text1_2{
+    top: 36.2px;
+    left: 283px;
+    font-size: 27px;
+    letter-spacing: 0.35px;
+}
+
+/* EF */
+#EF-text1_1{
+    top: 14.4px;
+    left: 313.7px;
+    font-size: 25.3px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+}
+
+#EF-text1_2{
+    top: 57.9px;
+    left: 315.2px;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+
+
+/* CTA */
+#CTA-text1_1{
+    font-size: 11.8px;
+    line-height: 14px;
+    letter-spacing: 0.2px;
+    font-style: italic;
+    font-weight: 900;
+    top: 31px;
+    left: 667px;
+    font-weight: normal;
+}
+
+#CTA-arrow1_1{
+	background: url('../assets/CTA-arrow1_1.png');
+}

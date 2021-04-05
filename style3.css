@@ -1,0 +1,62 @@
+*{
+    margin:0 ;
+    padding:0 ;
+}
+body{
+   background-image:url("./beach3.jpg");
+   background-repeat:no-repeat;
+   
+   
+   
+
+}
+#bullet
+{
+    list-style: none;
+    display: flex;
+}
+#bullet li{
+    color:yellow;
+    font-weight: 600;
+    padding:20px 40px ;
+}
+nav 
+{
+   background-color: blue;
+   padding: 10px ;
+   
+}
+
+
+ul {
+list-style: none;   
+display: flex;
+}
+
+li a {
+    text-decoration:none ;
+   background-color:blue;
+   padding: 200px; 
+ font-size:40px ;
+ 
+}
+
+input{
+    padding: -10px;
+    margin: 20px;
+   border-radius: 60px;
+   border: white;
+   
+}
+ i
+{
+    margin:7px -50px ;
+    padding:0px;
+    border-left: 0px solid;
+    background-color: black;
+    border-radius: 7px;
+    justify-content: center;
+    color: coral;
+
+
+}

@@ -1,0 +1,41 @@
+*{
+    margin:0px ;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    background-color: blanchedalmond;
+    background-image: url("./sowmya1.jpeg");
+    background-repeat: no-repeat;
+
+}
+#bullet
+{
+    list-style: none;
+    display: flex;
+}
+#bullet li{
+    color:red;
+    font-weight: 900;
+    padding:20px 40px ;
+}
+.m1{
+    position: absolute;
+    top: 20%;
+    left:35% ;
+    transform: translate(-50,-50);
+    justify-content: center;
+    
+
+}
+input{
+    border: 3px solid palegreen;
+    height:40px ;
+    width: 300px;
+    border-radius:60px ;
+    padding: 0px 10px;
+}
+i{
+    padding:-5px ;
+    margin:-20px;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    background-color: white;
+}
+nav 
+{
+   background-color: blue;
+   padding: 10px ;
+   
+}
+
+
+ul {
+list-style: none;   
+display: flex;
+}
+
+li a {
+    text-decoration:none ;
+   background-color:blue;
+   padding: 28px; 
+ font-size:34px ;
+
+}
+input{
+    padding: auto;
+    margin: auto;
+   border-radius: 17px;
+   border: white;
+}
+ i
+{
+    margin: opx -38px;
+    padding: 6px;
+    border-left: 0px solid;
+    background-color: black;
+    border-radius: 7px;
+    color: coral;
+
+
+
+
+}

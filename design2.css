@@ -1,0 +1,46 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+
+}
+    nav > ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        height: 33px;
+    }
+    li a{
+        text-decoration: none;
+        padding: 30px 20px;
+        color:yellow;
+        border-right: 1px solid ;
+    }
+    nav ul  li  a {
+
+        display: inline-block;
+        color: #111;
+        padding:10px 30px ;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: whitesmoke;
+    }
+    nav ul ul ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+         
+    }
+    nav ul ul ul li a{
+        width: 100px;
+        display: block;
+        border: 1px solid #ccc;
+    }
+    ul li:hover>ul{
+        
+        
+        display: block;
+    }
+

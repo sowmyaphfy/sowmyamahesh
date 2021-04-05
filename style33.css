@@ -1,0 +1,13 @@
+#block1{
+    height: 200px;
+    width: 300px;
+    background-color: chartreuse;
+}
+#block2{
+height: 200px;
+width: 300px;
+padding: 20px;
+box-sizing: border-box;
+background-color: blueviolet;
+
+}

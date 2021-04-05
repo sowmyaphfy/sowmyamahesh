@@ -1,0 +1,21 @@
+
+body{
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+
+        
+
+}
+
+nav ul li a{
+     
+
+        display:inline-block ;
+        color: #111;
+        padding:30px 40px ;
+ 
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: whitesmoke;
+    }
+}

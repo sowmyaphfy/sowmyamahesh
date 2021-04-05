@@ -1,0 +1,166 @@
+var creative = {};
+
+function init() {
+	gsap.set(['#viewport', '#border'], {autoAlpha: 1});
+	creative.viewPort = document.getElementById('viewport');
+	// gsap.set(['#temp'], {opacity:0.5});
+	
+	bgAnim();
+	frameOne();
+}
+
+function frameOne() {
+	gsap.set([
+		'.F1',
+	], {autoAlpha:1});
+	
+	var tl = gsap.timeline({delay:0.5});
+	var splitText1_1 = new SplitText("#F1-text1_1", {type:"words"});
+	var	wordsText1_1 = splitText1_1.words;
+
+	var splitText1_2 = new SplitText("#F1-text1_2", {type:"words"});
+	var	wordsText1_2 = splitText1_2.words;
+
+	tl.from(wordsText1_1, {
+		duration:1, 
+		y:25, 
+		rotation:20, 
+		opacity:0, 
+		ease:"elastic.out(0.7, 0.3)", 
+		stagger: 0.03
+	});
+
+	tl.from(wordsText1_2, {duration: 0.8, opacity:0, x:15, ease:'back', stagger: 0.1}, '-=0.5');
+
+	var delay = 3;
+	gsap.to(['.F1-text'], {duration:0.5, opacity:0, delay:delay-0.3});
+	gsap.delayedCall(delay+0.3, frameTwo);
+}
+
+function frameTwo (){
+	gsap.set([
+		'.F2'
+	], {autoAlpha:1});
+	
+	var tl = gsap.timeline();
+	var splitText2_1 = new SplitText("#F2-text1_1", {type:"words"});
+	var	wordsText2_1 = splitText2_1.words;
+
+	var splitText2_2 = new SplitText("#F2-text1_2", {type:"words"});
+	var	wordsText2_2 = splitText2_2.words;
+
+	tl.from(wordsText2_1, {duration: 0.8, opacity:0, x:10, ease:'back', stagger: 0.1});
+	tl.from(wordsText2_2, {duration: 0.8, opacity:0, x:-10, ease:'back', stagger: 0.1}, '-=0.4');
+	tl.from(['#F2-legal1_1'], {duration:0.3, opacity:0}, "-=0.8");
+
+	var delay = 2.5;
+	gsap.to(['.F2-text'], {duration:0.5, opacity:0, delay:delay-0.3});
+	gsap.delayedCall(delay+0.3, frameThree);
+}
+
+function frameThree (){
+	gsap.set([
+		'.F3'
+	], {autoAlpha:1});
+	
+	var tl = gsap.timeline();
+	var splitText3_1 = new SplitText("#F3-text1_1", {type:"words"});
+	var	wordsText3_1 = splitText3_1.words;
+
+	var splitText3_2 = new SplitText("#F3-text1_2", {type:"words"});
+	var	wordsText3_2 = splitText3_2.words;
+
+	tl.from(wordsText3_1, {duration: 0.8, opacity:0, x:15, ease:'back', stagger: 0.1});
+	tl.from(wordsText3_2, {duration: 0.8, opacity:0, x:-15, ease:'back', stagger: 0.1}, '-=0.4');
+
+	var delay = 2.5;
+	gsap.to(['.F3-text'], {duration:0.5, opacity:0, delay:delay-0.3});
+	gsap.delayedCall(delay+0.3, endFrame);
+}
+
+function endFrame() {
+	gsap.set(['#EF-lockup1_1'], {z:0.1, rotationZ:0.01, force3D:true});
+	gsap.set([
+		'.EF',
+		'#bg-lockup'
+	], {autoAlpha:1});
+	gsap.set(['#bg-lockup'], {transformOrigin:"center"});
+	gsap.from(['#EF-lockup1_1'], {duration:1, opacity:0});
+	gsap.from(['#bg-lockup'], {duration:5, scale:1.2, x:25, rotation:-5});
+
+	var tl = gsap.timeline({delay:0.2});
+	var splitText4_1 = new SplitText("#EF-text1_1", {type:"words"});
+	numWords = splitText4_1.words.length;
+
+	var splitText4_2 = new SplitText("#EF-text1_2", {type:"words"});
+	numWords2 = splitText4_2.words.length;
+
+	for(var i = 0; i < numWords; i++){
+		tl.from(splitText4_1.words[i], {duration:2, opacity:0}, Math.random() * 0.5);
+	}
+
+	for(var i = 0; i < numWords2; i++){
+		tl.from(splitText4_2.words[i], {duration:1, opacity:0, delay:0.8}, Math.random() * 0.5);
+	}
+
+	var delay = 1.75;
+	gsap.delayedCall(delay, ctaAnim);
+}
+
+function ctaAnim(){
+	gsap.set([
+		'.CTA',
+	], {autoAlpha:1});
+	gsap.set(['#CTA-arrow1_1'], {z:0.1, rotationZ:0.01, force3D:true});
+	
+	var tl = gsap.timeline();
+	var splitText1_1 = new SplitText("#CTA-text1_1", {type:"chars"});
+	numChars = splitText1_1.chars.length;
+	
+	gsap.from(['.CTA'], {duration:0.5, opacity:0, x:2});
+	for(var i = 0; i < numChars; i++){
+		gsap.set(splitText1_1.chars[i], {force3D:false})
+		tl.from(splitText1_1.chars[i], {duration:0.2, z:0.01, scaleX:6, rotationZ: -10, x:10, opacity:0, stagger:0.05, ease:Power2.easeOut, onComplete:viewPortOver}, ">-0.1");
+	}
+}
+
+function bgAnim() {
+	gsap.set([ '#gradMult', '#gradScreen' ], {opacity:0.4});
+	gsap.set([
+		'#F1-bgMask1',
+		'#bg-particles1',
+		'#bg-particles2'
+	], {autoAlpha:1});
+	gsap.to(['#clipMask'], {duration:1, x:812, ease:Power2.easeInOut});
+	gsap.set(['#bg-particles1'], {transformOrigin:"center", scale:0.6, rotation:-40});
+	gsap.set(['#bg-particles2'], {transformOrigin:"center", scale:1, rotation:-20});
+
+	gsap.to(['#bg-particles1'], {duration:16, ease:Power2.easeOut, rotation:0, scale:0.5});
+	gsap.to(['#bg-particles2'], {duration:22, ease:Power2.easeOut, rotation:0, scale:0.5});
+
+	gsap.to(['#bg-particles1'], {duration:1, opacity:0.6, yoyo:true, repeat:9, delay:1, onComplete:function(){
+		gsap.to(['#bg-particles1'], {duration:1, opacity:1});
+	}});
+	gsap.to(['#bg-particles2'], {duration:1, opacity:0.4, yoyo:true, repeat:10, onComplete:function(){
+		gsap.to(['#bg-particles2'], {duration:1, opacity:1});
+	}});
+}
+
+function addEventListeners() {
+	creative.viewPort.addEventListener("mouseover", viewPortOver);
+}
+
+function viewPortOver(e){
+	creative.viewPort.removeEventListener("mouseover", viewPortOver);
+	gsap.fromTo(['#CTA-arrow1_1'], {x:0, opacity:1}, 
+	{duration:0.5, opacity:0.8, ease:Power2.easeInOut, x:-3, repeat:1, yoyo:true, onComplete:viewPortOut});
+}
+
+function viewPortOut(e){
+	creative.viewPort.addEventListener("mouseover", viewPortOver);
+}
+
+
+function insertAfter(newNode, referenceNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}

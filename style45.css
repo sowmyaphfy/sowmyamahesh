@@ -1,0 +1,13 @@
+*{
+    margin:0 ;
+    padding:0 ;
+}
+body{
+    background-image: url("./sunset.webp");
+    background-repeat: no-repeat;
+    
+}
+img{
+    height: 900px;
+    width: 900;
+}

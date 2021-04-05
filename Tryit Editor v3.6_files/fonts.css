@@ -1,0 +1,28 @@
+/*Fonts*/
+@font-face {
+	font-family: 'MetricHPE-bold';
+	src: url('../assets/fonts/MetricHPE-Web-Bold.woff') format('woff');
+	font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+	font-family: 'MetricHPE-black';
+	src: url('../assets/fonts/MetricHPE-Web-Black.woff') format('woff');
+	font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+	font-family: 'MetricHPE-semi-bold';
+	src:url('../assets/fonts/MetricHPE-Web-Semibold.woff') format('woff');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'MetricHPE-light';
+	src:url('../assets/fonts/MetricHPE-Web-Light.woff') format('woff');
+	font-weight: normal;
+    font-style: normal; 
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://s0.2mdn.net/6254465/1612939305904/THPE_1671-G7_IDP_StorageAAS-SrITDM-728x90/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="ad.size" content="width=728,height=90">
+	<title>HPE G7</title>
+	
+	<script type="text/javascript">var clickTag0 = "http://www.google.com";</script>
+	
+	<!-- styles -->
+	<link href="./default.css" rel="stylesheet" media="all">
+	<link href="./style.css" rel="stylesheet" media="all">
+
+	<!-- imgLoad -->
+	<script src="./imagesloaded.pkgd.min.js.download"></script>
+
+	<!-- gsap3 -->
+	<script src="./gsap_3.5.1_min.js.download"></script>
+<script type="text/javascript">
+    
+  (function() {
+    var MAX_URL_PARAM_LENGTH = 34;
+    var CLICK_X_URL_KEY = 'nx';
+    var CLICK_Y_URL_KEY = 'ny';
+    var CREATIVE_DIMENSIONS_KEY = 'dim';
+    var AD_URL_PARAM = '&adurl=';
+
+    var relegateNavigation = '';
+    var urlParamMap = {};
+
+    urlParamMap[CLICK_X_URL_KEY] = null;
+    urlParamMap[CLICK_Y_URL_KEY] = null;
+    urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+    var handleClickTagMessage = function(e) {
+      try {
+        var eventData = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+      if (eventData.isInitClickTag) {
+        if (eventData.clickTags) {
+          for (var i = 0; i < eventData.clickTags.length; i++) {
+            var clkTag = eventData.clickTags[i];
+            window[clkTag.name] = clkTag.url;
+          }
+        } else if (eventData.clickTag) {
+          window.clickTag = eventData.clickTag;
+        }
+        relegateNavigation = eventData.relegateNavigation;
+      }
+    };
+
+    var storeClickCoordinates = function(e) {
+      urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+      urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+    };
+
+    var getCreativeDimensions = function() {
+      return window.innerWidth + 'x' + window.innerHeight;
+    }
+
+    var getExitClickParams = function(e) {
+      urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+      var exitParams = '';
+      for (var key in urlParamMap) {
+        exitParams += '&' + key + '=';
+        if (urlParamMap[key] !== null) {
+          exitParams += urlParamMap[key];
+        }
+      }
+      return exitParams;
+    }
+
+    var appendExitClickParams = function(url) {
+      var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+      var paramsToBeAdded = getExitClickParams();
+      if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+        url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+          url.substr(adUrlIndex);
+      };
+      return url;
+    };
+
+    if (open.call) {
+      window.open = function(open) {
+        return function(url, name, features) {
+          url = appendExitClickParams(url);
+          if (relegateNavigation === 'parent') {
+            var message = {'clickTag': url, 'isPostClickTag': true};
+            parent.postMessage(JSON.stringify(message), '*');
+          } else {
+            var args = [url, name];
+            if (features) {
+              args.push(features);
+            }
+            open.apply(window, args);
+          }
+        };
+      }(window.open);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener(
+          'message', handleClickTagMessage, false);
+      window.addEventListener('mousedown', storeClickCoordinates, true);
+    } else {
+      window.attachEvent('onmessage', handleClickTagMessage);
+    }
+  })();
+    
+  </script><link rel="stylesheet" type="text/css" href="./fonts.css">/*css*/</link></head>
+
+<body>
+	<div class="adSize" id="viewport" style="opacity: 1; visibility: inherit;">
+		<svg id="F1-bgMask1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 728 90" style="opacity: 1; transform: translate(0px, 0px); visibility: inherit;">
+			<defs>
+			  <style>
+				.cls-1 { fill: none; } .cls-2 { isolation: isolate; } .cls-3 { clip-path: url(#clip-path); } .cls-4 { opacity: 0.7; mix-blend-mode: screen; } .cls-4, .cls-5 { fill: url(#linear-gradient); } .cls-5 { opacity: 0.8; mix-blend-mode: multiply; }
+			  </style>
+			  <clippath id="clip-path">
+				<path id="clipMask" class="cls-1" d="M-80.07,90H-828.33V0H-2.45Z" data-svg-origin="-828.3300170898438 0" transform="matrix(1,0,0,1,812,0)" style="transform-origin: 0px 0px;"></path>
+			  </clippath>
+			  <lineargradient id="linear-gradient" x1="260.63" y1="-92.82" x2="459.69" y2="172.58" gradientUnits="userSpaceOnUse">
+				<stop offset="0.08" stop-color="#0d4168"></stop>
+				<stop offset="0.36" stop-color="#201a6e"></stop>
+				<stop offset="0.7" stop-color="#36158a"></stop>
+				<stop offset="1.2" stop-color="#6e16c1"></stop>
+			  </lineargradient>
+			</defs>
+			<g class="cls-2">
+			  <g id="imgCon">
+				<image id="bg-particles2" width="1456" height="370" transform="matrix(0.5,0,0,0.5,0,-48)" xlink:href="assets/bg-particles2.jpg" data-svg-origin="728 185" style="opacity: 1; visibility: inherit; transform-origin: 0px 0px;"></image>
+				<image id="bg-particles1" width="1456" height="370" transform="matrix(0.5,0,0,0.5,0,-48)" xlink:href="assets/bg-particles1.png" data-svg-origin="728 185" style="opacity: 1; visibility: inherit; transform-origin: 0px 0px;"></image>
+				<g id="gradientMask">
+				  <g class="cls-3">
+					<rect id="gradScreen" class="cls-4" width="728" height="90" style="opacity: 0.4;"></rect>
+					<rect id="gradMult" class="cls-5" width="728" height="90" style="opacity: 0.4;"></rect>
+				  </g>
+				</g>
+			  </g>
+			</g>
+		</svg>
+		  
+		<svg id="EF-lockup1_1" class="EF posAb topLef" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 728 90" style="opacity: 1; transform: translate3d(0px, 0px, 0.1px) rotate(0.01deg); visibility: inherit;">
+			<defs>
+			<clippath id="clip-path-lockup" transform="translate(0)">
+				<path id="element" d="M144,24V67H294V24Zm140.5,33.5h-131v-24h131Z" style="fill: none"></path>
+			</clippath>
+			</defs>
+			<g id="EF-lockupClip1_1">
+				<g style="clip-path: url(#clip-path-lockup)">
+					<image id="bg-lockup" width="728" height="90" transform="matrix(1,0,0,1,1,0)" xlink:href="assets/bg-lockup.jpg" data-svg-origin="364 45" style="opacity: 1; visibility: inherit; transform-origin: 0px 0px;"></image>
+			  	</g>
+			</g>
+		  </svg>
+		  
+		  
+		<!-- F1 -->
+		<div id="F1-text1" class="F1 topLef posAb adSize" style="opacity: 1; transform: translate(0px, 0px); visibility: inherit;">
+			<div id="F1-text1_1" class="F1 F1-text posAb metBold" style="opacity: 0; transform: translate(0px, 0px); visibility: inherit;"><div style="position: relative; display: inline-block; opacity: 1; transform: translate(0px, 0px);">experience</div></div>
+			<div id="F1-text1_2" class="F1 F1-text posAb metBold" style="opacity: 0; transform: translate(0px, 0px); visibility: inherit;"><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">storage</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">as</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">a</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">service.</div></div>
+		</div>
+		
+		<!-- F2 -->
+		<div id="F2-text1" class="F2 topLef posAb adSize" style="opacity: 1; transform: translate(0px, 0px); visibility: inherit;">
+			<div id="F2-text1_1" class="F2 F2-text posAb metBold" style="opacity: 0; transform: translate(0px, 0px); visibility: inherit;"><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">pay</div></div>
+			<div id="F2-text1_2" class="F2 F2-text posAb metBold" style="opacity: 0; transform: translate(0px, 0px); visibility: inherit;"><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">as</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">you</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">grow.</div><sup class="lglStar metLight"><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">*</div></sup></div>
+			<div id="F2-legal1_1" class="F2 F2-text lgl posAb metLight" style="opacity: 0; transform: translate(0px, 0px); visibility: inherit;">*Reserve capacity may apply</div>
+		</div>	
+
+		<!-- F3 -->
+		<div id="F3-text1" class="F3 topLef posAb adSize" style="opacity: 1; transform: translate(0px, 0px); visibility: inherit;">
+			<div id="F3-text1_1" class="F3 F3-text posAb metBold" style="opacity: 0; transform: translate(0px, 0px); visibility: inherit;"><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">scale</div></div>
+			<div id="F3-text1_2" class="F3 F3-text posAb metBold" style="opacity: 0; transform: translate(0px, 0px); visibility: inherit;"><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">as</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">you</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">need.</div></div>
+		</div>	
+		
+		<!-- EF -->
+		<div id="EF-text1" class="EF topLef posAb adSize" style="opacity: 1; transform: translate(0px, 0px); visibility: inherit;">
+			<div id="EF-text1_1" class="EF EF-text posAb metBlack" style="opacity: 1; transform: translate(0px, 0px); visibility: inherit;"><div style="position: relative; display: inline-block; opacity: 1;">the</div> <div style="position: relative; display: inline-block; opacity: 1;">intelligent</div> <div style="position: relative; display: inline-block; opacity: 1;">data</div><br><div style="position: relative; display: inline-block; opacity: 1;">platform</div> <div style="position: relative; display: inline-block; opacity: 1;">from</div> <div style="position: relative; display: inline-block; opacity: 1;">hpe</div></div>
+			<div id="EF-text1_2" class="EF EF-text posAb metBold" style="opacity: 1; transform: translate(0px, 0px); visibility: inherit;"><div style="position: relative; display: inline-block; opacity: 1;">ai-driven.</div> <div style="position: relative; display: inline-block; opacity: 1;">built</div> <div style="position: relative; display: inline-block; opacity: 1;">for</div> <div style="position: relative; display: inline-block; opacity: 1;">cloud.</div> <div style="position: relative; display: inline-block; opacity: 1;">as</div> <div style="position: relative; display: inline-block; opacity: 1;">a</div> <div style="position: relative; display: inline-block; opacity: 1;">service.</div></div>
+		</div>
+
+		<!-- CTA -->
+		<div id="CTA-con1_1" class="CTA topLef posAb adSize" style="opacity: 1; transform: translate(0px, 0px); visibility: inherit;">
+			<div id="CTA-arrow1_1" class="CTA posAb adSize bgDef" style="opacity: 1; transform: translate3d(0px, 0px, 0.1px) rotate(0.01deg); visibility: inherit;"></div>
+			<div id="CTA-text1_1" class="CTA posAb metSemiBold" style="opacity: 1; transform: translate(0px, 0px); visibility: inherit;"><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">s</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">w</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">i</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">t</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">c</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">h</div><br><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">t</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">o</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">d</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">a</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">y</div></div>
+		</div>
+
+		<!-- <div id="temp" class="adSize posAb topLef bgDef"></div> -->
+		
+		<div id="F1-logo1_1" class="F2 adSize posAb topLef bgDef" style="opacity: 1; transform: translate(0px, 0px); visibility: inherit;"></div>
+		
+		<div id="border" class="adSize posAb topLef" style="opacity: 1; transform: translate(0px, 0px); visibility: inherit;"></div>
+		<a id="clickTag0" class="clickTag adSize" href="javascript:void(window.open(window.clickTag0, &#39;blank&#39;))"></a>
+	</div>
+	<script>
+		var callback = function(){ console.log('adLoading'); };    
+		if ( document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll) ) { callback(); } else { document.addEventListener("DOMContentLoaded", subload); }
+
+		function subload(){
+			// console.log('hello')
+			loadjscssfile('css/fonts.css', "css"); 
+			loadjscssfile('js/preloader.js', "js"); 
+		}
+
+		function loadjscssfile(filename, filetype) {
+			if (filetype == "js") {
+				//Load in Javascript
+				var extJavascript = document.createElement('script');
+				extJavascript.setAttribute('type', 'text/javascript');
+				extJavascript.setAttribute('src', filename);
+				extJavascript.appendChild(document.createTextNode('/*js*/')); // for IE
+
+				document.getElementsByTagName('body')[0].appendChild(extJavascript);
+			} else if (filetype == "css") {
+
+				//Load in CSS
+				var extCSS = document.createElement('link');
+				extCSS.setAttribute("rel", "stylesheet");
+				extCSS.setAttribute("type", "text/css");
+				extCSS.setAttribute("href", filename);
+				extCSS.appendChild(document.createTextNode('/*css*/')); // for IE
+
+				document.getElementsByTagName("head")[0].appendChild(extCSS);
+			}
+		}
+	</script>
+	<script src="./SplitText.min.js.download"></script>
+	<script src="./animation.js.download"></script>
+
+<script type="text/javascript" src="./preloader.js.download">/*js*/</script></body></html>

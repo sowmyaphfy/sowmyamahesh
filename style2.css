@@ -1,0 +1,22 @@
+*{
+    margin:0 ;
+    padding: 0;
+    background-color: blue;
+    color: #000;
+}
+body{
+    margin:0 ;
+    padding: 0;
+    background-color: red;
+    
+    color: violet;
+}
+p{
+    background-color: slategrey;
+    font-weight:bolder ;
+    color: thistle;
+}
+.text1{
+color:orange;
+background-color: yellow;
+}

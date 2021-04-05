@@ -1,0 +1,53 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+
+}
+    nav > ul{
+        list-style: none;
+        display: flex;
+        position: fixed;
+        margin: 15px 340px;
+        height: 33px;
+
+    }
+    li a{
+        text-decoration: none;
+        padding: 10px 20px;
+        color:yellow;
+        border-right: 1px solid ;
+    }
+    nav ul li  a {
+
+        display: inline-block;
+        color: #111;
+        padding:10px 20px ;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: whitesmoke;
+    }
+    nav ul ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+         
+    }
+    nav ul ul li a{
+        width: 200px;
+        display: block;
+        border: 1px solid #ccc;
+    }
+    nav ul li:hover>ul{
+        width:100%;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,2,55,1) 8%, rgba(5,4,70,1) 14%, rgba(6,5,82,1) 19%, rgba(7,99,38,1) 26%, rgba(9,9,121,1) 35%, rgba(8,135,123,1) 42%, rgba(26,140,25,1) 46%, rgba(23,148,51,1) 52%, rgba(21,153,68,1) 56%, rgba(17,165,106,1) 65%, rgba(12,178,149,1) 75%, rgba(9,188,179,1) 82%, rgba(6,196,204,1) 88%, rgba(234,37,3,1) 95%, rgba(0,255,29,1) 100%);
+
+           
+        display: block;
+        border: 10px solid blue;
+        transition: 0.6 ease-in;
+    }
+    
