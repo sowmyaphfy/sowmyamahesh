@@ -1,0 +1,39 @@
+
+div ul {
+    left:1100px;
+    position: relative;
+    list-style: none;
+           
+    
+    
+    }
+    .hr{
+        position: relative;
+        bottom:-40px;
+        right: 10px;
+    }
+    li img{
+        text-decoration: none;
+    }
+    div ul li {
+    
+        display: inline-block;
+            color: royalblue;
+            padding:10px 20px ;
+            text-decoration: none;
+            
+            background-color:white;
+            width: 180px;
+            display: block;
+            border: 1px solid #ccc;
+            
+    }
+    img{
+        position: relative;
+        height: 22px;
+        width: -13px;
+        top: 4px;
+        left: 3px;
+    
+    }
+    

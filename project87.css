@@ -1,0 +1,37 @@
+body{
+    background-color: darkgreen;
+}
+li::first-letter{
+    color: #000;
+
+}
+p::first-line{
+    background-color: blueviolet;
+}
+li::before{
+    content: "hi";
+    color: coral;
+
+}
+li::after{
+    content: "end of li";
+    color:navajowhite;
+
+}
+p::before{
+    content: "hi";
+    color: coral;
+
+}
+p::after{
+    content: "end of li";
+    color: coral;
+}
+input{
+    color: orchid;
+}
+::placeholder{
+    color: orange;
+}
+
+

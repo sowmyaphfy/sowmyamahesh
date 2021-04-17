@@ -1,0 +1,9 @@
+p{
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+
+
+font-size: 100px;
+font-weight: 900;
+-webkit-background-clip: text;
+-webkit-text-fill-color:transparent;
+}

@@ -1,0 +1,51 @@
+body{
+    background: rgb(41,2,55);
+background: linear-gradient(90deg, rgba(41,2,55,1) 8%, rgba(55,31,2,1) 19%, rgba(54,2,55,1) 30%, rgba(54,2,55,1) 38%, rgba(54,2,55,1) 44%);
+    
+}
+nav ul li{
+    display:inline-block;
+    color: blueviolet;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+i{
+    color: cadetblue;
+    padding: 15px 15px;
+}
+input{
+    border-radius: 45px;
+    color: crimson;
+}
+h1{
+    position: relative;
+    text-align: center;
+    color: darkmagenta;
+    bottom: -90px;
+}
+h4{
+    position: relative;
+    bottom:-100px;
+    left: 400px;
+}
+.m1{
+    position: relative;
+    
+
+    bottom:-120px ;
+
+}
+ nav ul li  :hover{
+     color: brown
+
+}
+
+
+
+
+    

@@ -1,0 +1,18 @@
+nav ul{
+    display: flex;
+    list-style: none;
+    background-color: chocolate;
+    padding: 50px;
+    align-items: center;
+    height: 20px;
+    text-transform: uppercase;
+
+}
+/*justify-content: center;*/
+
+li{
+    color: wheat;
+    text-decoration: none;
+    padding: 10px;
+
+}

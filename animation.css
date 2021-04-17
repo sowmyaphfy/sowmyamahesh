@@ -1,0 +1,15 @@
+body{
+    overflow: hidden;
+}
+img{
+    width:120;
+    height: 100%;
+    animation: 2s zoomin infinite;
+}
+@keyframes zoomin{
+    100%{
+        width:70%;
+    }
+}
+    
+  

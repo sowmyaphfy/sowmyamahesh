@@ -1,0 +1,49 @@
+
+#headerblock3{
+
+    height: 150px; 
+    width: 100%;
+    background-color: #012b72;
+    
+    
+    
+
+}
+.imga1,.imga2,.imga3,.imga4,.imga5,.imga6,.imga7,.imga8,.imga9,.imga10,.imga11{
+    position: relative;
+    height: 22px;
+    width: 30px;
+    top: 18px;
+    left: 42px;
+
+}
+.line11,.line12,.line13,.line14,.line15,.line16,.line17,.line18,.line19,.line20,.line21{
+    position: relative;
+    right: -5px;
+    font-size: 11px;
+    bottom: -33px;
+    opacity: 0.5;
+    color: #fff ;
+
+    
+    
+}
+.lin1:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

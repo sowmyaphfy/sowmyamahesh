@@ -38,4 +38,19 @@ body{
         display: block;
         border: 1px solid #ccc;
     }
+    ul li a:hover{
+        background: rgb(2,0,36);
+         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,2,55,1) 8%);
+           
+    }
+    nav ul li:hover>ul
+    {
+        display: block;
+        width: 100%;
+        transition: 0.6 ease-in;
+        width:100% ;
+        border: 2px blueviolet;
+        
+    }
+
     
